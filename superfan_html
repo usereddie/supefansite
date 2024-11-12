@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="images/db.ico" rel="icon" type="image/x-icon" />
+    <title>SuperFan Website</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <!-- left column-->
+    <div class="row gold" id="ronaldocolumn"> 
+     <div class="box center-content">
+        <img
+          id="presentronaldo"
+          src="images/saudironaldo.png" onclick="ronaldohighlight()"
+          class="clickable shadow" />
+      </div>
+      
+      <div class="box center-content">
+        <img id="CR7bio"  src="images/CR7biography.png" onclick="ronaldologo()" 
+        class="clickable shadow"/>
+      </div>
+      <div class="box center-content contain-image">
+        <img
+          id="ronaldojersey"
+          src="images/ronaldojersey.png" onclick="madridjerseychant()"
+          class="clickable shadow" />
+      </div>
+    </div>
+
+    <!-- center column-->
+    <div class="column center-content black ">
+      <img id="worldcup" src="images/worldcup.png " onclick="resetAll()" 
+      class="clickable shadow"/>
+      </div>
+    </div>
+
+    <!-- right column-->
+    <div class="row pink" id="messicolumn">
+    <div class="box center-content">
+        <img
+          id="presentmessi"
+           src="images/miamimessi.png" onclick="messihighlight()"
+           class="clickable shadow"/>
+      </div>
+      <div class="box center-content">
+        <img id="LM10bio"  src="images/LM10img.png" onclick="messilogo()"
+        class="clickable shadow"/>
+      </div>
+      <div class="box center-content">
+        <img id="messijersey"  src="images/messijersey.png" onclick="barcelonajerseychant()"
+        class="clickable shadow"/>
+      </div>
+    </div>
+    <audio src="audio/ronaldocelebrationaudio.wav" id="SUI"></audio>
+    <audio src="audio/messiSDPinterludeaudio.mp3" id="messi!"></audio>
+    <audio src="audio/ronaldohighlightaudio.wav" id="CR7highlightaudio"></audio>
+    <audio src="audio/messihighlightaudio.mp3" id="LM10highlightaudio"></audio>
+    <audio src="audio/inshallahronny.wav" id="ronnystatsaudio"></audio>
+    <audio src="audio/quemirabobo.wav" id="messistatsaudio"></audio>
+    <script src="script.js"></script>
+  </body>
+</html>
